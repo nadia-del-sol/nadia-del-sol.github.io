@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: "Gochi Hand", cursive;
+}
+
+/***********Flex borders*****************/
+/*
+.layout-container {
+  border: 0.3rem dashed red;
+  background: paleturquoise;
+}
+
+header,
+main,
+footer {
+  border: 0.3rem dashed blue;
+  background: yellow;
+}
+
+.flex-cell {
+  border: 2px dashed grey;
+}
+*/
+/************End of Flex borders***********/
+
+.layout-container {
+  width: clamp(900px, 75vw, 1200px);
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+main,
+footer {
+  padding: 0 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header a {
+  font-size: 1.3rem;
+  margin: 0px 5px;
+  color: #0088cc;
+}
+
+header a:first-child {
+  font-size: 2.2rem;
+  margin-right: auto;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+p.intro {
+  text-indent: 10px;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 700;
+}
+
+.flex-net {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-cell {
+  display: flex;
+  align-items: center;
+  flex-basis: calc(100% / 4);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/*******Components A and B***********/
+.card {
+  /*display: flex;
+  flex-direction: column;*/
+  width: 100%;
+  box-shadow: 0 0 10px grey;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.rating > .fa-star {
+  padding-right: 5px;
+}
+
+.rating > i {
+  color: #faaa00;
+  font-size: calc(1rem + 0.3vw);
+}
+
+/*********Component A*********/
+.component-a > h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.event-date {
+  font-size: calc(1.2rem + 0.3vw);
+  font-family: "Lato", sans-serif;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 0;
+  margin-top: -5px;
+}
+
+.comp-a-header {
+  font-family: "Oswald", sans-serif;
+  font-size: calc(1.2rem + 0.3vw);
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.comp-a-description {
+  font-family: "Lato", sans-serif;
+  font-size: calc(1rem + 0.3vw);
+  color: #828282;
+  margin: 0px 10px 15px 15px;
+}
+
+p.comp-a-description > a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+}
+
+.component-a > .stars-a {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.comp-a-footer {
+  background: black;
+  color: #c8c8c8;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: calc(0.9rem + 0.3vw);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/******Component B********/
+.component-b {
+  /*display: flex;
+  flex-direction: column;*/
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0px 10px 10px rgba(200, 200, 200);
+  padding: 10px;
+  border: 0.5px solid rgba(218, 218, 218, 0.5);
+  border-radius: 4px;
+  /*border: red dashed 2px;*/
+}
+
+.comp-b-header {
+  text-transform: uppercase;
+  font-size: calc(1.2rem + 0.3vw);
+  font-weight: 600;
+  margin: 15px 10px 0;
+}
+
+.stars-b {
+  margin: 15px 10px;
+}
+
+.comp-b-prices {
+  margin: 0px 5px 15px 5px;
+}
+
+.comp-b-prices > span {
+  margin-right: 10px;
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: 600;
+}
+
+div.comp-b-prices > span:first-child {
+  color: #21ae47;
+}
+
+div.comp-b-prices > span:nth-child(2) {
+  color: #6f747f;
+  text-decoration: line-through;
+}
+
+div.comp-b-prices > span:last-child {
+  color: #da3343;
+}
+
+.comp-b-btns {
+  margin-left: 5px;
+  /*margin-bottom: 15px;*/
+}
+
+.comp-b-btns > button {
+  font-size: calc(0.9rem + 0.3vw);
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.comp-b-btns > button:focus {
+  outline: none;
+  background-color: slategray;
+  color: white;
+  border: 0.3px solid slategrey;
+}
+
+.add-to-cart-btn {
+  padding: 10px;
+  background-color: #363941;
+  border: none;
+  color: white;
+}
+
+.like-btn {
+  padding: 10px;
+  border: 0.3px solid rgb(210, 210, 210);
+  background-color: rgb(250, 250, 250);
+}
+
+.ask-btn {
+  padding: 10px;
+  border: 0.3px solid rgb(210, 210, 210);
+  background-color: rgb(250, 250, 250);
+}

@@ -1,0 +1,62 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+main {
+  width: 600px;
+  padding: 50px;
+  background: linear-gradient(125deg, rgb(56, 81, 217), rgb(160, 66, 163));
+  text-align: justify;
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 22px;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+
+.introduction {
+  width: 500px;
+} /*Этот параметр я задавала, ориентируясь на макет.
+    Ширина этого абзаца явно меньше ширины абзацев ниже.*/
+
+.jet {
+  width: 550px;
+}
+
+.main-text {
+  font-size: 14px;
+}
+
+button {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.order-btn {
+  background-color: rgb(96, 114, 225);
+  margin-right: 8px;
+}
+
+.learn-btn {
+  background-color: rgb(249, 99, 66);
+}
+
+.link-back {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  background: #e0e0e0;
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}

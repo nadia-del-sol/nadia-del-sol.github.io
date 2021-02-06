@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: clamp(300px, 70vw, 600px);
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.component-a {
+  /*display: flex;
+  flex-direction: column;*/
+  box-shadow: 0 0 10px grey;
+  /*border: red dashed 2px;*/
+}
+
+.component-a-img {
+  width: 100%;
+}
+
+.component-a > h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.event-date {
+  font-size: calc(1.8rem + 0.3vw);
+  font-family: "Lato", sans-serif;
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin: 0;
+  margin-top: -5px;
+}
+
+.comp-a-header {
+  font-family: "Oswald", sans-serif;
+  font-size: calc(1.8rem + 0.3vw);
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.comp-a-description {
+  font-family: "Lato", sans-serif;
+  font-size: calc(1.4rem + 0.3vw);
+  color: #828282;
+  margin: 0px 20px 20px 20px;
+}
+
+p.comp-a-description > a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+}
+
+.component-a > .stars-a {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rating > i {
+  color: #faaa00;
+  font-size: calc(1.7rem + 0.3vw);
+}
+
+.stars-a > .fa-star {
+  padding-right: 5px;
+}
+
+.comp-a-footer {
+  background: black;
+  color: #c8c8c8;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: calc(1.5rem + 0.3vw);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}

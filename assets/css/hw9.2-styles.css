@@ -1,0 +1,7 @@
+.intro {
+  text-align: justify;
+}
+
+.flex-cell {
+  flex-basis: calc(100% / 3);
+}

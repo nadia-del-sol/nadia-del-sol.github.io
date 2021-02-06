@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../fonts/Noto_Sans_JP/NotoSansJP-Black.otf);
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../fonts/Noto_Sans_JP/NotoSansJP-Bold.otf);
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../fonts/Noto_Sans_JP/NotoSansJP-Light.otf);
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../fonts/Noto_Sans_JP/NotoSansJP-Medium.otf);
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../fonts/Noto_Sans_JP/NotoSansJP-Regular.otf);
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Malgun Gothic";
+  src: url(../fonts/Malgun_Gothic/Malgun-Gothic-Regular.ttf);
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Malgun Gothic";
+  src: url(../fonts/Malgun_Gothic/Malgun-Gothic-Bold.ttf);
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+  font-family: "Malgun Gothic", sans-serif;
+}
+
+main {
+  width: 550px;
+  height: 750px;
+  margin: 25px auto;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgb(129, 129, 129);
+  color: #222423;
+  padding: 80px 40px 20px 40px;
+  background: linear-gradient(90deg, #303ea3, #a8327e);
+  background-position: 0px -580px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+section {
+  text-align: center;
+}
+
+.profile-photo {
+  max-width: min(100%);
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 95px;
+  box-shadow: 0 0 15px grey;
+  border: white 8px solid;
+}
+
+.summary {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.left-btn,
+.right-btn {
+  float: left;
+  width: 50%;
+  border: none;
+  background: none;
+}
+
+.right-btn {
+  text-align: center;
+}
+
+.numbers {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+}
+
+.message {
+  border: none;
+  border-radius: 8px;
+  background: #85c704;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 15px;
+  margin: 25px 0;
+  box-shadow: 0 0 25px rgba(169, 169, 169, 0.8);
+}

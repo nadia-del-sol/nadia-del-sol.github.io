@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: cornsilk;
+}
+
+.container {
+  width: clamp(600px, 75vw, 1200px);
+  margin: 0px auto;
+  min-height: 100vh;
+}
+
+header {
+  margin-top: 20px;
+}
+
+main {
+  border: 0.13rem solid burlywood;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+main {
+  /*width: clamp(600px, 75vw, 1200px);
+  margin: 0px auto;
+  min-height: 100vh;*/
+  background: url(../img/hw-page/wood-texture.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: "Passion One", cursive;
+  text-transform: uppercase;
+  color: rgb(190, 117, 43);
+}
+
+.flex-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-cell {
+  flex-basis: calc(100% / 3);
+  padding: 10px;
+}
+
+.hw-list {
+  width: clamp(150px, 100%, 450px);
+  height: clamp(150px, 22vw, 450px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/hw-page/yellow-red-pin-512-a.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hw-name {
+  transform: rotate(-9deg);
+  font-family: "Sriracha", cursive;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
